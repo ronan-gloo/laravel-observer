@@ -1,8 +1,7 @@
 Laravel Observer
 ================
 
-Route Eloquent’s models events to the model’s instance, and / or a
-specific class
+Dispatch Eloquent’s models events to the model’s instance, and / or a specific class
 
 ### Installation
 

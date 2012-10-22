@@ -13,9 +13,9 @@ abstract class Observe {
 	 * @param mixed $model
 	 * @return void
 	 */
-	final public static function factory($class, $params = null)
+	final public static function factory($params = null)
 	{
-		$instance = new $class();
+		$instance = new static();
 		
 		if ($params and is_array($params))
 		{

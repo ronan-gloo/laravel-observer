@@ -38,7 +38,7 @@ foreach (Config::get('observer::observer.events') as $event)
 				$class = is_int($name) ? $params : $name;
 				
 				// instatiate Observer with parameters
-				$instance = $class::factory($class, is_array($params) ? $params : null);
+				$instance = $class::factory(is_array($params) ? $params : null);
 				
 				// run the method
 				$instance->$event($model);
