@@ -1,0 +1,10 @@
+{
+    "name": "ronan-gloo/laravel-eloquent-observer",
+    "description": "Dispatch Eloquent’s models events to the model’s instance, and / or a specific class",
+    "authors": [
+        {
+            "name": "ronan-gloo",
+            "email": "sonotone13@gmail.com"
+        }
+    ]
+}

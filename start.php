@@ -19,7 +19,7 @@ Autoloader::map(array( 'Observer\Observe' => __DIR__.'/observe.php' ));
 */
 foreach (Config::get('observer::observer.events') as $event)
 {
-	Event::listen('eloquent.'.$event, function($model) use($event)
+	Event::listen('eloquent.' . $event, function($model) use($event)
 	{
 		$method = Config::get('observer::observer.prefix').$event;
 		

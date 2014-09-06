@@ -2,18 +2,13 @@
 
 namespace Observer;
 
-abstract class Observe {
-	
-	/**
-	 * Run an instance method.
-	 * 
-	 * @access public
-	 * @static
-	 * @param mixed $event
-	 * @param mixed $model
-	 * @return void
-	 */
-	final public static function factory($params = null)
+abstract class Observe
+{
+    /**
+     * @param null $params
+     * @return static
+     */
+    final public static function factory($params = null)
 	{
 		$instance = new static();
 		
